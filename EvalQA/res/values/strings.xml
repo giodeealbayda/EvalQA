@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EvalQA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pub_create_topic">PubCreateTopic</string>
+    <string name="title_activity_pub_student_list">PubStudentList</string>
+    <string name="title_activity_pub_question">PubQuestion</string>
+    <string name="title_activity_pub_result">PubResult</string>
+    <string name="title_activity_priv_join">PrivJoin</string>
+    <string name="title_activity_priv_question">PrivQuestion</string>
+
+</resources>
