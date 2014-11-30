@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		topics = new ArrayList<>();
+		topics = new ArrayList<Topic>();
 		
 		teacher = (Button) findViewById(R.id.teacher_btn);
 		student = (Button) findViewById(R.id.student_btn);
