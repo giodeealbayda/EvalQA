@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout 
+        android:id="@+id/pubscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Topic:" />
+    
+	     <Spinner
+	        android:id="@+id/pub_topic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+     
+	      <Button 
+	      android:id="@+id/start_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Start"/>
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/privscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      
+        <TextView 
+        android:id="@+id/tv_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Topic:"/>
+    
+	    <Spinner
+	        android:id="@+id/priv_topic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	    
+	    <Button 
+	        android:id="@+id/btn_join"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Join"
+	        />
+        
+        
+      </LinearLayout>   
+      
+      
+
+</LinearLayout>

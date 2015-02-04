@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.viasido.evalqa.PubStudentList" >
+
+    <TextView
+        android:id="@+id/topicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+<!-- 
+	<ListView
+        android:id="@+id/listview_students"
+        android:layout_width="wrap_content"
+        android:layout_height="336dp"
+        android:layout_weight="0.03" />
+ -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="32dp">
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_topic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Topic:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_quesNum"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Question#" />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_question"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sample question, what is your name?" />
+     
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_a1"
+        android:text="A. Answer" />     
+     
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_a2"
+        android:text="B. Answer" />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_a3"
+        android:text="C. Answer" />"
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_a4"
+        android:text="D. Answer" />
+
+     <Button
+         android:id="@+id/nextbtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Next" />
+        
+        
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/startquiz_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz" />
+
+</LinearLayout>
