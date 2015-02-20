@@ -99,8 +99,8 @@ public class PubStudentList extends Activity {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			
 			questionCtr++;
+			
 			if(questionCtr < 4)
 			{
 				Question question = questions.get(questionCtr);
@@ -116,10 +116,15 @@ public class PubStudentList extends Activity {
 				a3.setText(answers.get(2).toString());
 				a4.setText(answers.get(3).toString());
 			}
-			else
-			{
-				String message="Score \n";
+			else if(questionCtr == 4){
+				
+				nextBtn.setEnabled(false);
+				
+				Event event = new Event(Event.R_PERSONAL_SCREENS, QAEvent.FINISH_QUESTION, "");
+				EventManager.getInstance().sendEvent(event);
 
+				
+				String message="Score \n";
 				
 				for(Map.Entry<String, Integer> entry: studentscoremap.entrySet()){
 					String key = entry.getKey();
@@ -129,7 +134,7 @@ public class PubStudentList extends Activity {
 				}
 				tvQNum.setText(message);
 			}
-			
+		
 		}
 	};
 	

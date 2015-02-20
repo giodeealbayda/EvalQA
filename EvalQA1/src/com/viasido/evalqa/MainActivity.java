@@ -236,7 +236,7 @@ public class MainActivity extends Activity {
 		answer3.add(engq3D);
 		engQ3.setAnswers(answer3);
 		
-		Question engQ4 = new Question("English of Kuya");
+		Question engQ4 = new Question("English of Tatay");
 		ArrayList<Answer> answer4 = new ArrayList<Answer>();
 		Answer engq4A = new Answer("Sister", false);
 		Answer engq4B = new Answer("Brother", false);

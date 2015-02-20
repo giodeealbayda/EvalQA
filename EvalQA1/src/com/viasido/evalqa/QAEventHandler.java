@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import Objects.Answer;
 import Objects.Question;
 import Objects.Topic;
+import android.app.AlertDialog;
 import android.util.Log;
 
 import com.llsx.pps.event.Event;
@@ -29,6 +30,9 @@ public class QAEventHandler implements EventHandler {
 			break;
 		case QAEvent.FINISH_QUESTION:
 			Log.e("Finish", "Finish");
+			AlertDialog.Builder builder = new AlertDialog.Builder(PrivQuestion.activity);
+			builder.setTitle("Finish");
+			builder.show();
 			break;
 		case QAEvent.RECEIVE_ANS:
 			break;

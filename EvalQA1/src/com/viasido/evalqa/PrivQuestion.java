@@ -73,12 +73,27 @@ public class PrivQuestion extends Activity {
 		PpsManager.getInstance().start();
 	}
 	
+	private void disableAll(){
+		option_a.setEnabled(false);
+		option_b.setEnabled(false);
+		option_c.setEnabled(false);
+		option_d.setEnabled(false);
+	}
+	
+	public static void enableAll(){
+		option_a.setEnabled(true);
+		option_b.setEnabled(true);
+		option_c.setEnabled(true);
+		option_d.setEnabled(true);
+	}
 	OnClickListener select1 = new OnClickListener() {
 		
 		@Override
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			Event event = new Event(Event.R_PUBLIC_SCREENS, QAEvent.SEND_ANS, "a-"+SessionManager.getInstance().getOwnDeviceName());
+
+			disableAll();
 			EventManager.getInstance().sendEvent(event);							
 		}
 
@@ -93,6 +108,8 @@ public class PrivQuestion extends Activity {
 			//SessionManager.getInstance().setChosenSession(topicSpin.getSelectedItem().toString());
 			
 			Event event = new Event(Event.R_PUBLIC_SCREENS, QAEvent.SEND_ANS, "b-"+SessionManager.getInstance().getOwnDeviceName());
+
+			disableAll();
 			EventManager.getInstance().sendEvent(event);
 		}
 
@@ -104,6 +121,8 @@ public class PrivQuestion extends Activity {
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			Event event = new Event(Event.R_PUBLIC_SCREENS, QAEvent.SEND_ANS, "c-"+SessionManager.getInstance().getOwnDeviceName());
+
+			disableAll();
 			EventManager.getInstance().sendEvent(event);
 		}
 
@@ -115,6 +134,8 @@ public class PrivQuestion extends Activity {
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			Event event = new Event(Event.R_PUBLIC_SCREENS, QAEvent.SEND_ANS, "d-"+SessionManager.getInstance().getOwnDeviceName());
+
+			disableAll();
 			EventManager.getInstance().sendEvent(event);	
 		}
 
@@ -134,6 +155,9 @@ public class PrivQuestion extends Activity {
 	}
 	
 	public static void nextQuestion(Question q){
+		
+		enableAll();
+		
 		question.setText(q.getQuestion());
 		ArrayList<Answer> a = q.getAnswers();
 		
@@ -141,8 +165,9 @@ public class PrivQuestion extends Activity {
 		option_b.setText(a.get(1).toString());
 		option_c.setText(a.get(2).toString());
 		option_d.setText(a.get(3).toString());
-		
 	}
+	
+	
 	
 	
 }

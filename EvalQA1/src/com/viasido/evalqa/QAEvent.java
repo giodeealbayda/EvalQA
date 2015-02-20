@@ -14,6 +14,5 @@ public class QAEvent extends Event{
 	
 	public static final int RECEIVE_ANS = 3;
 	public static final int SEND_ANS = 4;
-	
-	
+		
 }
